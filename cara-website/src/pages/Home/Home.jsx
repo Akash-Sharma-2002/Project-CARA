@@ -8,19 +8,17 @@ import Banner from "../../components/Banner/Banner";
 import SmBanner from "../../components/Sm-Banner/SmBanner";
 import Banner3 from "../../components/Banner3/Banner3";
 import Footer from "../../components/Footer/Footer";
-
-
+import { pro1 } from "../../assets/asset";
 
 const Home = () => {
-  
   return (
     <>
       <Navbar />
       <Hero />
       <Feature />
-      <Product />
+      <Product type="Featured Products" products={pro1} />
       <Banner />
-      <Product /> 
+      {/* <Product /> */}
       <SmBanner />
       <Banner3 />
       <Footer />

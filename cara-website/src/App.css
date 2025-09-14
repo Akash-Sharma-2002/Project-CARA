@@ -24,6 +24,14 @@ h6 {
   padding: 40px 80px;
 }
 
-.sectionm1{
+.sectionm1 {
   margin: 40px 0;
+}
+
+@media (max-width: 799px) {
+
+  .sectionp1 {
+    padding: 40px;
+  }
+
 }
