@@ -9,7 +9,10 @@ import SmBanner from "../../components/Sm-Banner/SmBanner";
 import Banner3 from "../../components/Banner3/Banner3";
 import Footer from "../../components/Footer/Footer";
 
+
+
 const Home = () => {
+  
   return (
     <>
       <Navbar />
@@ -17,7 +20,7 @@ const Home = () => {
       <Feature />
       <Product />
       <Banner />
-      <Product />
+      <Product /> 
       <SmBanner />
       <Banner3 />
       <Footer />
