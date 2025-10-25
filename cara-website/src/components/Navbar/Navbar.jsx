@@ -1,10 +1,11 @@
 import React, { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import style from "./navbar.module.css";
 import { asset } from "../../assets/asset";
 
 const Navbar = () => {
   const [isActive, setIsActive] = useState(false);
-  const [activeLink, setActiveLink] = useState('Home');
+  const location = useLocation();
 
   function open() {
     setIsActive(true);
@@ -15,22 +16,27 @@ const Navbar = () => {
     setIsActive(false);
   }
 
-  const links = ['Home', 'Shop', 'Blog', 'About', 'Contact'];
+  const links = [
+    { name: "Shop", path: "/Shop" },
+    { name: "Blog", path: "#" },
+    { name: "About", path: "#" },
+    { name: "Contact", path: "#" },
+  ];
 
   return (
     <div id={style.header}>
       <img src={asset.logo} alt="" />
       <div>
         <ul id={style.navbar} className={isActive ? style.active : ""}>
+          <li className={location.pathname === "/" ? style.active : ""}>
+            <Link to="/">Home</Link>
+          </li>
           {links.map((link, index) => (
-            <li key={index}>
-              <a
-                href="#"
-                className={activeLink === link ? style.active : ''}
-                onClick={() => setActiveLink(link)}
-              >
-                {link}
-              </a>
+            <li
+              key={index}
+              className={location.pathname === link.path ? style.active : ""}
+            >
+              <Link to={link.path}>{link.name}</Link>
             </li>
           ))}
           <li id="lg-bag">
