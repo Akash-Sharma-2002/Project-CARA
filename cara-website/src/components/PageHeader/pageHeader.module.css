@@ -1,0 +1,16 @@
+.pageHeader {
+  background-image: url("../../../public/b1.jpg");
+  width: 100%;
+  height: 40vh;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 14px;
+}
+
+.pageHeader h2,
+.pageHeader p {
+  color: #fff;
+}

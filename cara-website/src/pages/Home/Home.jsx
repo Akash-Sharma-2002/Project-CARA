@@ -8,7 +8,8 @@ import Banner from "../../components/Banner/Banner";
 import SmBanner from "../../components/Sm-Banner/SmBanner";
 import Banner3 from "../../components/Banner3/Banner3";
 import Footer from "../../components/Footer/Footer";
-import { pro1 } from "../../assets/asset";
+import { pro1, pro2 } from "../../assets/asset";
+import Newsletter from "../../components/Newsletter/Newsletter";
 
 const Home = () => {
   return (
@@ -16,11 +17,12 @@ const Home = () => {
       <Navbar />
       <Hero />
       <Feature />
-      <Product type="Featured Products" products={pro1} />
+      <Product type="Featured Products" para="Summer Collection New Morden Design" products={pro1} />
       <Banner />
-      {/* <Product /> */}
+      <Product type="New Arrivals" para="Summer Collection New Morden Design" products={pro2} />
       <SmBanner />
       <Banner3 />
+      <Newsletter />
       <Footer />
     </>
   );

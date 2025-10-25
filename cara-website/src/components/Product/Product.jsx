@@ -2,11 +2,11 @@ import React from "react";
 import style from "./product.module.css";
 
 const Product = (props) => {
-  const { type, products } = props;
+  const { type, para, products } = props;
   return (
-    <div id={style.product} className="sectionp1">
+    <div className={`${style.product} sectionp1`}>
       <h2>{type}</h2>
-      <p>Summer Collection New Morden Design</p>
+      <p>{para}</p>
       <div className={style.proContainer}>
         {products.map((item, index) => {
           return (
@@ -25,7 +25,7 @@ const Product = (props) => {
                 <h4>$78</h4>
               </div>
               <a href="#">
-                <i className="fal fa-shopping-cart cart"></i>
+                <i className="fal fa-shopping-cart" id={style.cart}></i>
               </a>
             </div>
           );

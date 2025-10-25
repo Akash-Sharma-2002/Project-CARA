@@ -25,6 +25,10 @@ import p14 from "./products/n6.jpg";
 import p15 from "./products/n7.jpg";
 import p16 from "./products/n8.jpg";
 
+import pay1 from "./pay/pay.png";
+import appStore from "./pay/appStore.jpg";
+import play from "./pay/play.jpg";
+
 export const asset = { logo };
 
 export const features = { f1, f2, f3, f4, f5, f6 };
@@ -51,6 +55,22 @@ export const pro2 = [
   { p_img: p16 },
 ];
 
-
-
-
+export const pro = [
+  { p_img: p1 },
+  { p_img: p2 },
+  { p_img: p3 },
+  { p_img: p4 },
+  { p_img: p5 },
+  { p_img: p6 },
+  { p_img: p7 },
+  { p_img: p8 },
+  { p_img: p9 },
+  { p_img: p10 },
+  { p_img: p11 },
+  { p_img: p12 },
+  { p_img: p13 },
+  { p_img: p14 },
+  { p_img: p15 },
+  { p_img: p16 },
+];
+export const pay = { pay1, appStore, play };

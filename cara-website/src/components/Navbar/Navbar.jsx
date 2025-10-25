@@ -4,6 +4,7 @@ import { asset } from "../../assets/asset";
 
 const Navbar = () => {
   const [isActive, setIsActive] = useState(false);
+  const [activeLink, setActiveLink] = useState('Home');
 
   function open() {
     setIsActive(true);
@@ -14,28 +15,24 @@ const Navbar = () => {
     setIsActive(false);
   }
 
+  const links = ['Home', 'Shop', 'Blog', 'About', 'Contact'];
+
   return (
     <div id={style.header}>
       <img src={asset.logo} alt="" />
       <div>
         <ul id={style.navbar} className={isActive ? style.active : ""}>
-          <li>
-            <a className={style.active} href="#">
-              Home
-            </a>
-          </li>
-          <li>
-            <a href="#">Shop</a>
-          </li>
-          <li>
-            <a href="#">Blog</a>
-          </li>
-          <li>
-            <a href="#">About</a>
-          </li>
-          <li>
-            <a href="#">Contact</a>
-          </li>
+          {links.map((link, index) => (
+            <li key={index}>
+              <a
+                href="#"
+                className={activeLink === link ? style.active : ''}
+                onClick={() => setActiveLink(link)}
+              >
+                {link}
+              </a>
+            </li>
+          ))}
           <li id="lg-bag">
             <a href="#">
               <i className="far fa-shopping-bag"></i>

@@ -1,4 +1,4 @@
-#feature {
+.feature {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -36,24 +36,40 @@
 .febox:nth-child(2) h6 {
   background-color: #cdebbc;
 }
+
 .febox:nth-child(3) h6 {
   background-color: #d1e8f2;
 }
+
 .febox:nth-child(4) h6 {
   background-color: #cdd4f8;
 }
+
 .febox:nth-child(5) h6 {
   background-color: #f6dbf6;
 }
+
 .febox:nth-child(6) h6 {
   background-color: #fff2e5;
 }
 
 @media (max-width: 799px) {
-  #feature {
+  .feature {
     justify-content: center;
   }
-  #feature .fe-box {
+
+  .feature .fe-box {
     margin: 15px 15px;
+  }
+}
+
+@media (max-width: 477px) {
+  .feature {
+    justify-content: space-between;
+  }
+
+  .feature .febox {
+    width: 155px;
+    margin: 0 0 15px 0;
   }
 }

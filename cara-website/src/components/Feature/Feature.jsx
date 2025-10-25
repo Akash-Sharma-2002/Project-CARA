@@ -4,7 +4,7 @@ import { features } from '../../assets/asset'
 
 const Feature = () => {
   return (
-    <div id={style.feature} className="sectionp1">
+    <div className={`${style.feature} sectionp1`}>
        <div className={style.febox}>
         <img src={features.f1} alt="" />
         <h6>Free Shipping</h6>
