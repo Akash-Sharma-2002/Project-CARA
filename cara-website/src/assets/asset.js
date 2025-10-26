@@ -55,6 +55,12 @@ export const pro2 = [
   { p_img: p16 },
 ];
 
+export const shopPro = [
+  { p_img: p5 },
+  { p_img: p6 },
+  { p_img: p7 },
+  { p_img: p8 },
+];
 export const pro = [
   { p_img: p1 },
   { p_img: p2 },
@@ -73,4 +79,7 @@ export const pro = [
   { p_img: p15 },
   { p_img: p16 },
 ];
+
+export const smallImg = [p1, p2, p3, p4];
+
 export const pay = { pay1, appStore, play };

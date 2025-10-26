@@ -4,6 +4,7 @@ import "./App.css";
 import { asset } from "./assets/asset";
 import Shop from "./pages/Shop/Shop";
 import { Route, Routes } from "react-router-dom";
+import SProduct from "./pages/SProduct/SProduct";
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Shop" element={<Shop />} />
+        <Route path="/SProduct" element={<SProduct />} />
       </Routes>
     </>
   );

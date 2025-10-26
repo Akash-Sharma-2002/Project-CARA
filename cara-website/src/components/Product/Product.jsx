@@ -1,5 +1,6 @@
 import React from "react";
 import style from "./product.module.css";
+import { Link } from "react-router";
 
 const Product = (props) => {
   const { type, para, products } = props;
@@ -24,9 +25,9 @@ const Product = (props) => {
                 </div>
                 <h4>$78</h4>
               </div>
-              <a href="#">
+              <Link to="/SProduct">
                 <i className="fal fa-shopping-cart" id={style.cart}></i>
-              </a>
+              </Link>
             </div>
           );
         })}

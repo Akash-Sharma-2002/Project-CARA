@@ -17,10 +17,11 @@ const Navbar = () => {
   }
 
   const links = [
+    { name: "Home", path: "/" },
     { name: "Shop", path: "/Shop" },
-    { name: "Blog", path: "#" },
-    { name: "About", path: "#" },
-    { name: "Contact", path: "#" },
+    { name: "Blog", path: "/Blog" },
+    { name: "About", path: "/About" },
+    { name: "Contact", path: "/Contact" },
   ];
 
   return (
@@ -28,9 +29,6 @@ const Navbar = () => {
       <img src={asset.logo} alt="" />
       <div>
         <ul id={style.navbar} className={isActive ? style.active : ""}>
-          <li className={location.pathname === "/" ? style.active : ""}>
-            <Link to="/">Home</Link>
-          </li>
           {links.map((link, index) => (
             <li
               key={index}

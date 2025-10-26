@@ -6,6 +6,7 @@ import Footer from "../../components/Footer/Footer";
 import { pro } from "../../assets/asset";
 import PageHeader from "../../components/PageHeader/PageHeader";
 import Pagination from "../../components/Pagination/Pagination";
+import SProduct from "../../pages/SProduct/SProduct";
 
 const Shop = () => {
   return (
@@ -16,6 +17,7 @@ const Shop = () => {
       <Pagination />
       <Newsletter />
       <Footer />
+      <SProduct />
     </>
   );
 };
