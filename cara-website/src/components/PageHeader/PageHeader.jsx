@@ -1,11 +1,15 @@
 import React from "react";
 import style from "./pageheader.module.css";
 
-const PageHeader = () => {
+
+const PageHeader = ({ h2, p, bGI }) => {
   return (
-    <div className={style.pageHeader}>
-      <h2>#stayhome</h2>
-      <p>save more with coupons & upto 70% off!</p>
+    <div
+      className={style.pageHeader}
+      style={{ backgroundImage: `url(${bGI})` }}
+    >
+      <h2>{h2}</h2>
+      <p>{p}</p>
     </div>
   );
 };

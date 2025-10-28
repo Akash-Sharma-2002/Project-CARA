@@ -7,12 +7,17 @@ import { pro } from "../../assets/asset";
 import PageHeader from "../../components/PageHeader/PageHeader";
 import Pagination from "../../components/Pagination/Pagination";
 import SProduct from "../../pages/SProduct/SProduct";
+import bGI from "../../../public/b1.jpg";
 
 const Shop = () => {
   return (
     <>
       <Navbar />
-      <PageHeader />
+      <PageHeader
+        h2="#stayhome"
+        p="save more with coupons & upto 70% off!"
+        bGI={bGI}
+      />
       <Product products={pro} />
       <Pagination />
       <Newsletter />
