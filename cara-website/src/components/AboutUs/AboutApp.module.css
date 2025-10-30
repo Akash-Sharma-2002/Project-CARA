@@ -1,0 +1,15 @@
+.aboutApp {
+  text-align: center;
+}
+
+.aboutApp .video {
+  width: 70%;
+  height: 100%;
+  margin: 30px auto 0 auto;
+}
+
+.aboutApp .video video {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}

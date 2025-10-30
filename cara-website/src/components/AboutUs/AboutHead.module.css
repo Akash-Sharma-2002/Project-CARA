@@ -1,0 +1,13 @@
+.aboutHead {
+  display: flex;
+  align-items: center;
+}
+
+.aboutHead .img {
+  width: 50%;
+  height: auto;
+}
+
+.aboutHead .div {
+  padding-left: 40px;
+}
