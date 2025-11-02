@@ -92,6 +92,6 @@ export const smallImg = [p1, p2, p3, p4];
 
 export const pay = { pay1, appStore, play };
 
-export const bGI = { bGI1, bGI2 };
+// export const bGI = { bGI1, bGI2 };
 
 export const blogImages = [ b1, b2, b3, b4 ];
