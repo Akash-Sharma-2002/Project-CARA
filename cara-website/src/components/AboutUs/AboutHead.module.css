@@ -11,3 +11,18 @@
 .aboutHead .div {
   padding-left: 40px;
 }
+
+@media (max-width: 477px) {
+  .aboutHead {
+    flex-direction: column;
+  }
+
+  .aboutHead .img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .aboutHead .div {
+    padding-left: 0px;
+  }
+}

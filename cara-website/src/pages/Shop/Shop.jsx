@@ -22,7 +22,6 @@ const Shop = () => {
       <Pagination />
       <Newsletter />
       <Footer />
-      <SProduct />
     </>
   );
 };

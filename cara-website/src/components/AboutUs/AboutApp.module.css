@@ -13,3 +13,9 @@
   height: 100%;
   border-radius: 20px;
 }
+
+@media (max-width: 477px) {
+  .aboutApp .video {
+    width: 100%;
+  }
+}

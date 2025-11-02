@@ -9,7 +9,7 @@ const AboutApp = () => {
         Download our <a href="#">App</a>
       </h1>
       <div className={style.video}>
-        <video autoplay muted loop src={aboutVideo}></video>
+        <video autoPlay muted loop src={aboutVideo}></video>
       </div>
     </div>
   );
