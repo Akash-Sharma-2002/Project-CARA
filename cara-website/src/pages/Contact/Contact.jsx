@@ -3,6 +3,7 @@ import Navbar from "../../components/Navbar/Navbar";
 import bGI from "../../../public/banner.png";
 import PageHeader from "../../components/PageHeader/PageHeader";
 import ContactDetails from "../../components/ContactDetails/ContactDetails";
+import FormDetails from "../../components/ContactDetails/FormDetails";
 
 const Contact = () => {
   return (
@@ -14,6 +15,7 @@ const Contact = () => {
         bGI={bGI}
       />
       <ContactDetails />
+      <FormDetails />
     </>
   );
 };
