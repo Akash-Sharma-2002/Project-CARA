@@ -37,6 +37,10 @@ import b2 from "./blog/b2.jpg";
 import b3 from "./blog/b3.jpg";
 import b4 from "./blog/b4.jpg";
 
+import h1 from "./people/1.png";
+import h2 from "./people/2.png";
+import h3 from "./people/3.png";
+
 export const asset = { logo };
 
 export const features = { f1, f2, f3, f4, f5, f6 };
@@ -92,6 +96,6 @@ export const smallImg = [p1, p2, p3, p4];
 
 export const pay = { pay1, appStore, play };
 
-// export const bGI = { bGI1, bGI2 };
+export const people = { h1, h2, h3 };
 
-export const blogImages = [ b1, b2, b3, b4 ];
+export const blogImages = [b1, b2, b3, b4];

@@ -4,6 +4,8 @@ import bGI from "../../../public/banner.png";
 import PageHeader from "../../components/PageHeader/PageHeader";
 import ContactDetails from "../../components/ContactDetails/ContactDetails";
 import FormDetails from "../../components/ContactDetails/FormDetails";
+import Newsletter from "../../components/Newsletter/Newsletter";
+import Footer from "../../components/Footer/Footer";
 
 const Contact = () => {
   return (
@@ -16,6 +18,8 @@ const Contact = () => {
       />
       <ContactDetails />
       <FormDetails />
+      <Newsletter />
+      <Footer />
     </>
   );
 };

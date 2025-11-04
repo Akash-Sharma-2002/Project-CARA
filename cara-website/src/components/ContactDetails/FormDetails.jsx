@@ -1,9 +1,11 @@
-import React from 'react'
+import React from "react";
+import style from "./ContactDetails.module.css";
+import People from "./People";
 
 const FormDetails = () => {
   return (
-    <div className='FormDetails'>
-        <form action="">
+    <div className={style.formDetails}>
+      <form action="">
         <span>LEAVE A MESSAGE</span>
         <h2>We love to hear from you</h2>
         <input type="text" placeholder="Your Name" />
@@ -18,8 +20,9 @@ const FormDetails = () => {
         ></textarea>
         <button className="normal">Submit</button>
       </form>
+      <People />
     </div>
-  )
-}
+  );
+};
 
-export default FormDetails
+export default FormDetails;

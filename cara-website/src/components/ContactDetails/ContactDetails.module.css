@@ -51,9 +51,92 @@
   height: 100%;
 }
 
+.formDetails {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+  padding: 80px;
+  border: 1px solid #e1e1e1;
+}
+
 .formDetails form {
   width: 65%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+}
+
+.formDetails form input,
+.formDetails form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  outline: none;
+  margin-bottom: 20px;
+  border: 1px solid #e1e1e1;
+}
+
+.formDetails form button {
+  background-color: #088178;
+  color: #fff;
+}
+
+.formDetails .people div {
+  padding-bottom: 25px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.formDetails .people div img {
+  width: 65px;
+  height: 65px;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+.formDetails .people div p {
+  margin: 0;
+  line-height: 25px;
+  font-size: 13px;
+}
+
+.formDetails .people div p span {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+}
+
+@media (max-width: 799px) {
+  .formDetails {
+    padding: 40px;
+  }
+  .formDetailsform {
+    width: 50%;
+  }
+}
+
+@media (max-width: 477px) {
+  .contactDetails {
+    flex-direction: column;
+  }
+
+  .contactDetails .details {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .contactDetails .map {
+    width: 100%;
+  }
+
+  .formDetails {
+    margin: 10px;
+    padding: 30px 10px;
+    flex-wrap: wrap;
+  }
+
+  .formDetails form {
+    width: 100%;
+    margin-bottom: 30px;
+  }
 }
