@@ -16,12 +16,16 @@ const Navbar = () => {
     setIsActive(false);
   }
 
+  const cartIcon = "far fa-shopping-bag";
+  const iD = "lg-bag";
+
   const links = [
     { name: "Home", path: "/" },
     { name: "Shop", path: "/Shop" },
     { name: "Blog", path: "/Blog" },
     { name: "About", path: "/About" },
     { name: "Contact", path: "/Contact" },
+    { name: "", path: "/Cart", className: cartIcon, iD: iD },
   ];
 
   return (
@@ -31,17 +35,15 @@ const Navbar = () => {
         <ul id={style.navbar} className={isActive ? style.active : ""}>
           {links.map((link, index) => (
             <li
+              id={link.iD}
               key={index}
               className={location.pathname === link.path ? style.active : ""}
             >
-              <Link to={link.path}>{link.name}</Link>
+              <Link to={link.path} className={link.className}>
+                {link.name} 
+              </Link>
             </li>
           ))}
-          <li id="lg-bag">
-            <a href="#">
-              <i className="far fa-shopping-bag"></i>
-            </a>
-          </li>
           <i id={style.close} className="far fa-times" onClick={close}></i>
         </ul>
       </div>
