@@ -1,5 +1,5 @@
 import React from "react";
-import style from "./pageheader.module.css";
+import style from "./pageHeader.module.css";
 
 
 const PageHeader = ({ h2, p, bGI }) => {
