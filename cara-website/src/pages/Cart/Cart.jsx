@@ -4,6 +4,7 @@ import PageHeader from "../../components/PageHeader/PageHeader";
 import bGI from "../../../public/banner.png";
 import Footer from "../../components/Footer/Footer";
 import CartItems from "../../components/CartItems/CartItems";
+import CartAdd from "../../components/CartItems/CartAdd";
 
 const Cart = () => {
   return (
@@ -15,6 +16,7 @@ const Cart = () => {
         bGI={bGI}
       />
       <CartItems />
+      <CartAdd />
       <Footer />
     </>
   );
