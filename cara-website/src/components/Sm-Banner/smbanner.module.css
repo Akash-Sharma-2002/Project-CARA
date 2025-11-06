@@ -9,7 +9,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  background-image: url("../../../public/b17.jpg");
+  background-image: url("../../../b17.jpg");
   min-width: 47%;
   height: 50vh;
   background-size: cover;
@@ -42,7 +42,7 @@
 }
 
 .smBanner .bannerBox2 {
-  background-image: url("../../../public/b10.jpg");
+  background-image: url("../../../b10.jpg");
 }
 
 @media (max-width: 799px) {

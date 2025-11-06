@@ -10,7 +10,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  background-image: url("../public/b7.jpg");
+  background-image: url("../b7.jpg");
   min-width: 30%;
   height: 30vh;
   background-size: cover;
@@ -31,11 +31,11 @@
 }
 
 .bannerBox2 {
-  background-image: url("../public/b4.jpg");
+  background-image: url("../b4.jpg");
 }
 
 .bannerBox3 {
-  background-image: url("../public/b18.jpg");
+  background-image: url("../b18.jpg");
 }
 
 @media (max-width: 799px) {
@@ -52,7 +52,7 @@
   .banner3 {
     padding: 0 20px;
   }
-  
+
   .banner3 .bannerBox {
     width: 100%;
     margin-bottom: 20px;

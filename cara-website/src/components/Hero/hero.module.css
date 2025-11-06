@@ -20,7 +20,7 @@
 }
 
 #hero button {
-  background-image: url("../../assets/button.png");
+  background-image: url("../../../button.png");
   background-color: transparent;
   color: #088178;
   padding: 14px 80px 14px 65px;
