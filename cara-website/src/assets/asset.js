@@ -29,9 +29,6 @@ import pay1 from "./pay/pay.png";
 import appStore from "./pay/appStore.jpg";
 import play from "./pay/play.jpg";
 
-import bGI1 from "./banner/b19.jpg";
-import bGI2 from "./banner/b1.jpg";
-
 import b1 from "./blog/b1.jpg";
 import b2 from "./blog/b2.jpg";
 import b3 from "./blog/b3.jpg";
@@ -99,3 +96,5 @@ export const pay = { pay1, appStore, play };
 export const people = { h1, h2, h3 };
 
 export const blogImages = [b1, b2, b3, b4];
+
+export const cartImg = [p1, p2, p3];
